@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(-45deg,  #574f7d, #95adbe, #dff0ea);
+  background-size: 3000%;
+  animation: gradient_bg 10s ease infinite;
+}
+
+
+
+#particles-js{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+#login{
+  text-align: center;
+  background:#dff0ea;
+  width: 25%;
+    height: 25%;
+  clip-path: polygon(10% 0, 0 100%, 100% 100%);
+  opacity:0.8;
+  padding:2em;
+  
+  position:absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#login input[type="text"], #login input[type="password"]{
+  padding:7px;
+  margin-bottom:10px;
+  border:1px #4f3a65 solid;
+}
+
+.trr{
+  width: 0; 
+  height: 0; 
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  
+  border-bottom: 100px solid black;
+
+  
+  ;
+}
+form {
+  margin-top: 80px;
+}
+@keyframes gradient_bg {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
